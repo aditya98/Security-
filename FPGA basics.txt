@@ -1,0 +1,33 @@
+FPGA abbv. field programmable gate array
+def Prefabricated silicon chips that can be programmed electrically to implement digital designs.
+Anything can be converted to digital from 3 basic building blocks/pieces: a wire ,a logic gate & a resistor.
+Most of the FPGAs are Generic while some of them maybe One Time Programmable.
+The Dominant types of FPGA that are availiable in the market are SRAM based.
+FPGAs have different storage types namely:
+1.) SRAM 
+2.) Antifuse
+3.) PROM
+4.) EEPROM
+5.) Flash
+To create a design we need Hardware Description Language (some inputs associated with HDL are Hardware Specifications and Design constraints.)
+The HDL is primarly of 2 types:
+1.) Verilog
+2.) VHDL (slightly difficult and more elaborative than Verilog)
+HDL is synthesized into a bit file using BITGEN to configure the FPGA.
+Architecture:
+Consists of Programmable Logic Blocks,Programmable interconnects,Programmable I/O blocks
+Static memory based SRAM is used for configuring both logic and interconnection using a stream of configuration bits.
+Modern FPGA consists of approx. 3,30,000 logic blocks and around 1,100 inputs and outputs.
+FPGAs are used for vector/concurrent/parallel programming.
+To mitigate around power wall(having too much power at a particular junction/point in FPGA) a non-planar multigate transistor(FinFET) is built up on a silicon wafer designed to reduce the surface area transistor occupies.
+Basics of Designing:
+Define Requirements--Create Architecture--Implement system--Verify.
+Middleware is a layer of software program that doesn't implement the core functionality of the product,but instead provides a layer that implements the core functionality of the product,but instead provides a layer that implements an industry standard or protocol.
+Key Questions to be addressed as a designer:
+What does the system have to do?
+Can I use my existing design with changes ?
+How much of the system can I leave for the software?
+How much hardware can i buy off the shelf?
+Does it work yet?
+Start with an idea of the system and then refine the idea into defenitions of transaction(Anyplace in the system where the information is shared.)
+A/c to Moore's Law(The rate at which technology evolves doubles every year) one would expect to deal with billions of logic gates but that might not be the case as most of the systems have been covered under hard IP(Intellectual Property).So, we can only get a portion of the whole process to implement for ourselves. i.e. basic design of how the system should behave.
