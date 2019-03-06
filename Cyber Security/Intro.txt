@@ -1,0 +1,13 @@
+Introduction:
+Cyber security has become a buzzword in the current generation. There are a lot of sayings out their about hackers but the one i like the most is "Amatuers hack machines while professionals hack people."
+What exactly is hacking?
+Well a lot of research has gone into this and people have broadly classified that there are two types of experts machinists/hobbyists who are classified as hackers and crackers. The distinction goes deep to summarise that hacker is the one with ethical practices that will help you in the hour of need while the cracker is the one who will put you to beg (think of all the ill you can.). However, i find that most of the people who do this stuff have a very blurry line as there is lawlessness in the cyberspace. In the world where trust is scarce you can not let the definition hanging by just integrity.
+I came across some interesting stuff i.e types of attacks:
+1) Social Engineering
+2) Reverse Engineering
+3) Forensics
+4) Password Cracking
+5) Web Hijacking
+6) Rooting.
+I'd be making notes as soon as these things make sense to me.
+Open for your suggestions on reading and improvement.
