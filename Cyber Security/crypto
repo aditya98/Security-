@@ -1,0 +1,39 @@
+Cryptography is the art of writing and solving codes. It is often touted as the solution to all the security problems but that is not the case.
+The basics of cryptography begins with defining ciphertexts and plain texts.
+A plaintext is the normal human readable form of text. 
+A cipher text is only intelligible to the person who knows what to do of the text.
+There are two main techniques in crypto : 1) Encryption 2) Hashing
+1) Encryption:
+A cipher is defined over triple algorithm (K,M,C)
+k: key
+m: message/plaintext
+c: ciphertext
+An encryption algorithm is a pair of efficient algorithm for encrypting and decrypting where on running the algorithm on message we get ciphertext and vice versa on running decrypting algorithm.
+i.e E : K x M -> C || D : K X C -> M
+Correctness Equation :
+It states that for every message belonging to the message set and every key belonging to the key set can decrypt the encrypted message with the correct key used for encryption.
+
+In a good algorithm Encryption is always randomised whereas Decryption is always deterministic.
+The worst type of attack that can break every code for the ciphers is ciphertext only attack meaning you could decode the ciphertext only by working on it alone without the use of encrypting key.
+So, we can summarise that a secure encrypted message is the wherein if you see the ciphertext you will have no info about the message.
+This can be done by key randomisation so as not to get deterministic encrypted ciphertexts.
+Perfect Secrecy principle:
+Perfect secrecy is the notion that, given an ciphertext from a perfectly secure encryption system, absolutely nothing will be revealed about the plaintext by the ciphertext.
+Kerkoff's principle:
+The encryption scheme is not a secret:
+-The only secret is the key
+-The key must be chosen at random and kept secret.
+Historical Ciphers:
+::Caesar Cipher
+::Vignere Cipher
+::One Time Pad
+Encryption is divided into two broad domains:
+Symmetric Encryption:
+Common key is shared over a secure channel and that key is used to decrypt the ongoing communication.
+||| Doesn't make much sense because if you have a secure channe why not use it forever it is like taunting the opponent by transmitting messages across attacker.
+Assymmetric Encryption:
+It works on the principle of public and private key pairs.
+The keys generated are orthogonal to each other meaning that if you encrypting using your private key then you can have it decrypted by your own public key.
+The public keys are hosted by a trusted CA(Certificate Authority).
+So, if A wants to encrypt a message end-to end to B then he will encrypt it with his private key and then with B's public key.
+The advantage of this process i that it verifies wether the message came fom the source it claims to be thus maintaining the integrity and confidentiality of data.
